@@ -1,0 +1,12 @@
+{
+    "language": "de",
+    "plic_path": "./plic",
+    "lib_path": "lib",
+    "gcc_path": "gcc",
+    "tab_width": 4,
+    "run_in_terminal": true,
+    "ai_provider": "ollama",
+    "ai_model": "llama3.2",
+    "ai_api_key": "",
+    "ai_base_url": "http://localhost:11434"
+}
