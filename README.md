@@ -1,5 +1,7 @@
 # PL/I IDE
 
+![Gameplay Screenshot](docs/bf1.png)
+
 A lightweight, cross-platform IDE for **PL/I**, built with Python and Tkinter.
 It is designed around the [Iron Spring PL/I](http://www.iron-spring.com/)
 compiler (`plic`) on Linux, linked with `gcc -m32`, and bundles an editor with
@@ -72,6 +74,8 @@ terminal window and live output inside the IDE.
 
 ### AI assistant
 
+![Gameplay Screenshot](docs/bf2.png)
+
 Open **AI -> Configure AI** and pick a backend:
 
 | Provider    | API key | Notes                                                       |
@@ -93,10 +97,7 @@ The UI language is selected from the **Language** menu and applied immediately
 (the window rebuilds while your code and output are preserved); the choice is
 remembered across restarts.
 
-Bundled languages: **English** (`en`, default), **German** (`de`), **Spanish**
-(`es`), **French** (`fr`), **Japanese** (`jp`), **Korean** (`kr`), **Polish**
-(`pl`), **Portuguese** (`pt`), **Romanian** (`ro`), **Russian** (`ru`) and
-**Thai** (`th`).
+Bundled languages: **English** (`en`, default), **Czech** (cs), **German** (de), **Spanish** (es), **French** (fr), **Italian** (it), **Japanese** (jp), **Korean** (kr), **Dutch** (nl), **Polish** (pl), **Portuguese** (pt), **Romanian** (ro), **Russian** (ru), **Thai** (th), and **Chinese** (zh).
 
 ### Adding a language
 
@@ -130,12 +131,14 @@ pli-ide/
 ├── ai_dialog.py         # AI assistant window + AI settings
 ├── i18n.py              # Translation loader
 └── lang/                # One <code>.json per UI language
+    ├── cs.json          # Czech          ├── nl.json   # Dutch
+    ├── de.json          # German         ├── pl.json   # Polish
     ├── en.json          # English        ├── pt.json   # Portuguese
-    ├── de.json          # German         ├── ro.json   # Romanian
-    ├── es.json          # Spanish        ├── ru.json   # Russian
-    ├── fr.json          # French         ├── th.json   # Thai
-    ├── jp.json          # Japanese       ├── kr.json   # Korean
-    └── pl.json          # Polish
+    ├── es.json          # Spanish        ├── ro.json   # Romanian
+    ├── fr.json          # French         ├── ru.json   # Russian
+    ├── it.json          # Italian        ├── th.json   # Thai
+    ├── jp.json          # Japanese       ├── zh.json   # Chinese
+    └── kr.json          # Korean        
 ```
 
 The non-GUI modules (`checker.py`, `build.py`, `config.py`, `fileio.py`,
